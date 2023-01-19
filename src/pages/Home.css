@@ -1,0 +1,40 @@
+.va--home--header {
+    align-items: center;
+    border-bottom: 2px solid;
+    border-color: #33a4f7;
+    display: flex;
+    justify-content: center;
+    background-color: #76b9e1;
+    height: 40px;
+    font-weight: bold;
+}
+.va--home-header--button {
+    position: absolute;
+    right: 20px;
+    font-size: 12px;
+}
+.va--home--body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.va--home--vin-history {
+    font-size: 14px;
+    margin-top: 5px;
+    color: grey;
+    padding: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    width: 206px;
+    border: 1px solid;
+    border-radius: 3px;
+}
+.va--home--variables {
+    display: flex;
+    border-bottom: 1px solid;
+    border-color: #d3cfcf;
+    justify-content: space-between;
+    padding: 5px 0 5px 0;
+}

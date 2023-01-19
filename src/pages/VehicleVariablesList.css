@@ -1,0 +1,17 @@
+.va--vehicle-variables--header {
+    align-items: center;
+    border-bottom: 2px solid;
+    border-color: #fc945e;
+    display: flex;
+    justify-content: center;
+    background-color: #e1ba76;
+    height: 40px;
+    font-weight: bold;
+}
+.va--vehicle-variables--variable {
+    padding: 20px;
+    display: flex;
+    border-bottom: 2px solid;
+    border-color: #d3cfcf;
+    border-width: 1px;
+}
