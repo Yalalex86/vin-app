@@ -35,7 +35,6 @@ class Home extends React.Component {
     }
 
     render() {
-        console.log(this.state.allVariables)
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
@@ -45,21 +44,7 @@ class Home extends React.Component {
                     </label>
                     <input type="submit" value="Submit" />
                 </form>
-                <button onClick={this.getAllVariablesHandler} >Variables</button>
-                {
-                    (this.state.allVariables) ?
-                        this.state.allVariables.map(m => {
-
-                            return (
-                                <div style={{ display: 'flex', border: 'solid', borderWidth: 1 }}>
-                                    <div onClick={() => this.onVariableClickHandler(m)}>{m.GroupName}: </div>
-                                    <div>{m.Name}: </div>
-                                    <div style={{ marginLeft: 10 }}>{m.Description}</div>
-                                </div>
-                            )
-                        })
-                        : null
-                }
+                <Link to='/variables' >123</Link>
                 {
                     (this.state.dataByVin) ?
                         this.state.dataByVin.map(m => {
@@ -82,26 +67,8 @@ class Home extends React.Component {
         )
     }
 
-    private readonly onVariableClickHandler = (variable: Variable) => {
-        console.log(variable.ID)
-        alert(variable.Description)
-    }
-
     private readonly handleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
         this.setState({ vin: event.target.value })
-    }
-
-    private readonly getAllVariablesHandler = () => {
-        fetch(`https://vpic.nhtsa.dot.gov/api/vehicles/getvehiclevariablelist?format=json`)
-            .then(res => res.json())
-            .then(
-                (result: AllDataByVin) => {
-                    this.setState({ allVariables: result.Results })
-                },
-                (error) => {
-                    console.log(error)
-                }
-            )
     }
 
     private readonly handleSubmit = (event: React.SyntheticEvent): void => {
