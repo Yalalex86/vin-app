@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vin-app/static/css/main.8b353930.css",
+    "main.js": "/vin-app/static/js/main.d753a129.js",
+    "static/js/787.2eee3c93.chunk.js": "/vin-app/static/js/787.2eee3c93.chunk.js",
+    "index.html": "/vin-app/index.html",
+    "main.8b353930.css.map": "/vin-app/static/css/main.8b353930.css.map",
+    "main.d753a129.js.map": "/vin-app/static/js/main.d753a129.js.map",
+    "787.2eee3c93.chunk.js.map": "/vin-app/static/js/787.2eee3c93.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b353930.css",
+    "static/js/main.d753a129.js"
+  ]
+}
